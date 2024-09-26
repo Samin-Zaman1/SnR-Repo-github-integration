@@ -1,0 +1,14 @@
+import json
+
+def load_data():
+    with open('data/sample_data.json') as file:
+        data = json.load(file)
+        return data
+
+def print_data(data):
+    for item in data:
+        print(f"Name: {item['name']}, Age: {item['age']}, Occupation: {item['occupation']}")
+
+if __name__ == "__main__":
+    data = load_data()
+    print_data(data)
