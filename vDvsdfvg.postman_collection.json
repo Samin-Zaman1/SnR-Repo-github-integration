@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "c02cdf75-7d6a-45e4-8a1a-79b9df9745e1",
+		"name": "vDvsdfvg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29033037"
+	},
+	"item": [
+		{
+			"name": "/create/manoz",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}//create/manoz",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"",
+						"create",
+						"manoz"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}//create/manoz",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"",
+								"create",
+								"manoz"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"message\": \"failed\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://de505dbb-a623-403f-9aa5-3307d642e861.mock.pstmn.io"
+		}
+	]
+}
