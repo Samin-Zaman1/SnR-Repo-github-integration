@@ -1,0 +1,47 @@
+openapi: 3.0.0
+info:
+  title: Simple Pet API
+  description: A simple API for managing pets.
+  version: 1.0.0
+paths:
+  /pets:
+    get:
+      summary: Get all pets
+      operationId: getPets
+      responses:
+        '200':
+          description: A list of pets
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+    post:
+      summary: Add a new pet
+      operationId: addPet
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                species:
+                  type: string
+      responses:
+        '201':
+          description: Pet created
+        '400':
+          description: Bad request
+components:
+  schemas:
+    Pet:
+      type: object
+      properties:
+        name:
+          type: string
+        species:
+          type: string
